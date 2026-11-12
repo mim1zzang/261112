@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    a<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keydown Sound Example</title>
+  </head>
+  <body>
+    <h1>Press 'A' or 'S' to play a sound</h1>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="soundA" src="634891__harrisonlace__fx_respawn.wav"></audio>
+    <audio id="soundS" src="877981__qvantor__whoosh-magic-sparkle.wav"></audio>
+
+    <script>
+      function keyEvent(e) {
+        if (e.key === "a") {
+          document.getElementById("soundA").play();
+        } else if (event.key === "s") {
+          document.getElementById("soundS").play();
+        }
+      }
+      // Function to play sound based on key press
+      document.addEventListener("keydown", keyEvent);
+    </script>
+  </body>
+</html>
+
+
